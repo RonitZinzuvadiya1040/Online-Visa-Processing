@@ -1,0 +1,187 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Coalition a Corporate Business Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Coalition Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- banner -->
+     <form  runat="server">
+	<div class="banner">
+		<div class="container">
+			<div class="w3_agile_banner_top">
+				<div class="agile_phone_mail">
+					<ul>
+						<li><i class="fa fa-phone" aria-hidden="true"></i>+91 92 65 28 58 17</li>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:Coalition@w3layouts.com">abhisheksonagra@gmail.com</a></li>
+					</ul>
+				</div>
+			</div>
+
+   
+   				<div class="agileits_w3layouts_banner_nav">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1>
+                            <asp:Label ID="Label1" runat="server" Text="VISA PROCESSING" ForeColor="WhiteSmoke" Font-Bold="true"></asp:Label></h1>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<nav class="cl-effect-13" id="cl-effect-13">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="home.aspx">Home</a></li>
+							<li><a href="about.aspx">About</a></li>
+							<li><a href="contact.aspx">Contact</a></li>
+                          
+                            <% If (Session("user") = "") Then%>
+                              <li><a href="login.aspx">login</a></li>
+                            <%Else%>
+                              <li><a href="login.aspx">logout</a></li>
+                            <%End If%>
+						</ul>
+						
+					</nav>
+
+					</div>
+				</nav>
+			</div>
+			<div class="wthree_banner_info">
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<h3>welcome to visa processing</h3>
+								<p></p>
+								<div class="agileits_more">
+									<ul>
+										<li><a href="#" class="w3ls_banner_more hvr-icon-hang">types of visa </a></li>
+										<li><a href="#" class="hvr-icon-hang" data-toggle="modal" data-target="#myModal">visa application</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<h3>OUR VISA PROCESSING</h3>
+								<p></p>
+								<div class="agileits_more">
+									<ul>
+										<li><a href="#" class="w3ls_banner_more hvr-icon-hang">Types of visa</a></li>
+										<li><a href="#" class="hvr-icon-hang" data-toggle="modal" data-target="#myModal">Visa Application</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<h3>VISA PROCESSING APOYMENT </h3>
+								<p></p>
+								<div class="agileits_more">
+									<ul>
+										<li><a href="#" class="w3ls_banner_more hvr-icon-hang">Types of visa</a></li>
+										<li><a href="#" class="hvr-icon-hang" data-toggle="modal" data-target="#myModal">Visa Application</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<h3>TYPES OF VISA PROCESSING </h3>
+								<p></p>
+								<div class="agileits_more">
+									<ul>
+										<li><a href="#" class="w3ls_banner_more hvr-icon-hang">Types of Visa</a></li>
+										<li><a href="#" class="hvr-icon-hang" data-toggle="modal" data-target="#myModal">Visa Application</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<h3>VISA PROCESSING VISITOR </h3>
+								<p></p>
+								<div class="agileits_more">
+									<ul>
+										<li><a href="#" class="w3ls_banner_more hvr-icon-hang">Types of visa </a></li>
+										<li><a href="#" class="hvr-icon-hang" data-toggle="modal" data-target="#myModal">Visa Application</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- flexSlider -->
+					<script defer src="js/jquery.flexslider.js"></script>
+					<script type="text/javascript">
+					    $(window).load(function () {
+					        $('.flexslider').flexslider({
+					            animation: "slide",
+					            start: function (slider) {
+					                $('body').removeClass('loading');
+					            }
+					        });
+					    });
+				  </script>
+				<!-- //flexSlider -->
+			</div>
+		</div>
+	</div>
+<!-- //banner -->	
+        <asp:ContentPlaceHolder id="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <!-- footer -->
+	<div class="footer">
+		<div class="col-md-4 footer-left-agileits">
+			<h3>Address</h3>
+				<ul>
+					<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> lokhand wala plaza ravapar road morbi</li>
+					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
+					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 7874339626</li>
+				</ul>
+		</div>
+		<div class="col-md-4 footer-left-agileinfo">
+			<h3>Online Visa</h3>
+			<p></p>
+				<ul class="social-icons">
+					<li><a href="#" class="icon icon-border facebook"></a></li>
+					<li><a href="#" class="icon icon-border twitter"></a></li>
+					<li><a href="#" class="icon icon-border instagram"></a></li>
+					<li><a href="#" class="icon icon-border pinterest"></a></li>
+				</ul>
+		</div>
+		<div class="col-md-4 footer-left-w3-agileits">
+			<h3>Visa Details</h3>
+			<p></p>
+				
+					<input type="email" name="email" placeholder="Your email...">
+					<input type="submit" value=" ">
+			
+		</div>
+		<div class="clearfix"></div>
+	</div>
+    </form>
+</body>
+</html>
